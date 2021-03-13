@@ -50,4 +50,28 @@ int main()
 
 	char clientColorChoices[SIZE];
 	char computerColorChoices[SIZE];
+	char wantToSee;
+	unsigned int userPredictionRight;
+
+	printf("How many times the user can try to predict? Please insert: ");
+	scanf("%u",&userPredictionRight);
+
+	randomColors(computerColorChoices, SIZE);
+
+	printf("Do you want to see the colors that computer has chosen? [Y/N]: ");
+	scanf("%c", &wantToSee);
+
+	if (toupper(wantToSee) == 'Y')
+	{
+		for (int i = 0; i < SIZE; i++)
+		{
+			printf("%c", computerColorChoices[i]);
+		}
+		printf("\n");
+	}
+
+	do {
+		
+	} while (userPredictionRight != 0)
+
 }
