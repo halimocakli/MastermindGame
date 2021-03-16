@@ -1,2 +1,2 @@
 # MastermindGame
-A color guessing game which is programmed with C
+A color guessing game which is programmed with C (Progressing)
